@@ -1,0 +1,33 @@
+1.given number odd or even?
+num = int(input("Enter a number: "))
+if (num % 2) == 0:
+   print("{0} is Even".format(num))
+else:
+   print("{0} is Odd".format(num))
+
+2.given number odd,even or zero?
+num = float(input("Enter a number: "))
+if num > 0:
+   print("Positive number")
+elif num == 0:
+   print("Zero")
+else:
+   print("Negative number")
+
+3.sum of two numbers?
+num1 = int(input("Enter Number1: "))
+num2 = int(input("Enter Number2: "))
+print("sum of given numbers is:", num1 + num2)
+
+4.prime number or not
+num = int(input("enter a number: "))
+flag = False
+if num > 1:
+    for i in range(2, num):
+        if (num % i) == 0:
+            flag = True
+            break
+if flag:
+    print(num, "is not a prime number")
+else:
+    print(num, "is a prime number")
